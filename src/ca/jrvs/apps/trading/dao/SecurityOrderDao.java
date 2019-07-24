@@ -1,7 +1,8 @@
 package ca.jrvs.apps.trading.dao;
 
+import ca.jrvs.apps.trading.model.domain.Account;
 import ca.jrvs.apps.trading.model.domain.SecurityOrder;
-import ca.jrvs.apps.trading.model.domain.Trader;
+import ca.jrvs.apps.trading.model.dto.MarketorderDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -33,13 +34,15 @@ public class SecurityOrderDao implements CRUDRepository<SecurityOrder,Integer> {
         simpleJdbcInsert =  new SimpleJdbcInsert( dataSource ).withTableName( TABLE_NAME );
     }
 
-    @Override
     public SecurityOrder save(SecurityOrder entity) {
         SqlParameterSource sqlParameterSource = new BeanPropertySqlParameterSource(entity);
         Number newId = simpleJdbcInsert.executeAndReturnKey(sqlParameterSource);
-        entity.setId(newId.intValue());
+        //entity.setSize(newId.intValue());
+        entity.setId( newId.intValue() );
         return entity;
     }
+
+
 
     @Override
     public SecurityOrder findById(Integer id) {
@@ -63,4 +66,5 @@ public class SecurityOrderDao implements CRUDRepository<SecurityOrder,Integer> {
         jdbcTemplate.update(deleteSQL,id);
 
     }
+
 }
