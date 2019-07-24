@@ -70,21 +70,13 @@ public class AppConfig {
 
         /**
          * checking if the IEX pub token and iexhost which are environment and property are empty
-         * @throws IllegalArgumentException if they are empty
+         * @throws IllegalArgumentException if jdbc is missing
+         *
          */
-        if (!StringUtil.isEmpty( System.getenv( "RDS_HOSTNAME" ) )) {
-            logger.info( "RDS_HOSTNAME:" + System.getenv( "RDS_HOSTNAME" ) );
-            logger.info( "RDS_USERNAME:" + System.getenv( "RDS_USERNAME" ) );
-            logger.info( "RDS_PASSWORD:" + System.getenv( "RDS_PASSWORD" ) );
-            jdbcurl = "jdbc://postgresql://" + System.getenv( "RDS_HOSTNAME" ) + ":" + System.getenv( "RDS_USERNAME" ) + ":" + System.getenv( "RDS_PASSWORD" )
-                    + "/jrvstrading";
-            user_name = System.getenv( "RDS_USERNAME" );
-            password = System.getenv( "RDS_PASSWORD" );
-        } else {
-            jdbcurl = System.getenv( "PSQL_URL" );
-            user_name = System.getenv( "PSQL_USERNAME" );
-            password = System.getenv( "PSQL_PASSWORD" );
-        }
+        jdbcurl = System.getenv( "PSQL_URL" );
+        user_name = System.getenv( "PSQL_USERNAME" );
+        password = System.getenv( "PSQL_PASSWORD" );
+
         logger.error( "JDBC:" + jdbcurl );
         if (StringUtil.isEmpty( jdbcurl, user_name, password )) {
             throw new IllegalArgumentException( "The credentials to connect with jdbc are missing" );
