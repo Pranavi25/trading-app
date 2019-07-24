@@ -3,6 +3,7 @@ package ca.jrvs.apps.trading.dao;
 import ca.jrvs.apps.trading.model.domain.Trader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
@@ -33,17 +34,25 @@ public class TraderDao implements CRUDRepository<Trader, Integer> {
     }
 
     @Override
-    public Trader findById(Integer integer) {
-        return null;
+    public Trader findById(Integer id) {
+        Trader trader = null;
+        trader = jdbcTemplate.queryForObject("SELECT * FROM" + Table_Name + "WHERE id = ?", BeanPropertyRowMapper.newInstance( Trader.class ),id );
+        return trader;
     }
 
     @Override
-    public boolean existsById(Integer integer) {
-        return false;
+    public boolean existsById(Integer id) {
+        String selectSQL = "SELECT COUNT(*) FROM" + Table_Name + "WHERE " + id + "=? ";
+        logger.info(selectSQL);
+        Integer count = jdbcTemplate.queryForObject( selectSQL,Integer.class, id );
+        return count!= 0;
     }
 
     @Override
-    public void deleteById(Integer integer) {
+    public void deleteById(Integer id) {
+        String deleteSQL = "DELETE FROM " + Table_Name + "WHERE " + id + "=?";
+        logger.info(deleteSQL);
+        jdbcTemplate.update(deleteSQL,id);
 
     }
 }
