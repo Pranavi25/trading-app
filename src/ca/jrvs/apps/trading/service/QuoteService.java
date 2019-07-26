@@ -6,6 +6,7 @@ import ca.jrvs.apps.trading.dao.QuoteDao;
 import ca.jrvs.apps.trading.model.domain.IexQuote;
 import ca.jrvs.apps.trading.model.domain.Quote;
 import com.sun.org.apache.xpath.internal.operations.Quo;
+import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
 import java.io.IOException;
@@ -14,6 +15,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Service
 public class QuoteService {
     private QuoteDao quoteDao;
     private MarketDatadao marketDatadao;
@@ -29,7 +31,7 @@ public class QuoteService {
         quote.setTicker( iexQuote.getSymbol() );
         quote.setLastPrice( Double.parseDouble( Optional.ofNullable( iexQuote.getLatestPrice() ).orElse( "0" ) ) );
         quote.setAskPrice( Double.parseDouble( Optional.ofNullable( iexQuote.getIexAskPrice() ).orElse( "0" ) ) );
-        quote.setBidPrize( Double.parseDouble( Optional.ofNullable( iexQuote.getIexBidPrize() ).orElse( "0" ) ) );
+        quote.setBidPrize( Optional.ofNullable( iexQuote.getIexBidPrize() ).orElse( Double.valueOf( "0" ) ) );
         quote.setBidSize( Integer.parseInt( Optional.ofNullable( iexQuote.getIexBidSize() ).orElse( "0" ) ) );
         quote.setAskSize( Integer.parseInt( Optional.of( iexQuote.getIexAskSize() ).orElse( "0" ) ) );
         return quote;
@@ -60,6 +62,9 @@ public class QuoteService {
         List<String> tickers = quotes.stream().map(Quote::getTicker).collect(Collectors.toList() );
         List<IexQuote> iexQuotes = marketDatadao.findIexQuoteByTicker( tickers );
         List<Quote> updateQuotes = iexQuotes.stream().map(QuoteService::buildQuoteFromIexQuote).collect( Collectors.toList());
-        quoteDao.update(updateQuotes);
-    }
+        updateQuotes.forEach( quote -> {
+            quoteDao.update(quote);
+        } );
+
+        }
 }

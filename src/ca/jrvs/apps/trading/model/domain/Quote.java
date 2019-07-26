@@ -6,7 +6,6 @@ public class Quote implements Entity<String> {
     private Integer askSize;
     private Double bidPrize;
     private Integer bidSize;
-    private String id;
     private Double lastPrice;
     private String ticker;
 
@@ -60,11 +59,12 @@ public class Quote implements Entity<String> {
 
     @Override
     public String getId() {
-        return null;
+        return this.ticker;
     }
 
     @Override
-    public void setId(String s) {
+    public void setId(String id) {
+        this.ticker=id;
 
     }
 }

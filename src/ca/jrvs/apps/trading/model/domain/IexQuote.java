@@ -17,7 +17,7 @@ public class IexQuote implements Entity{
     private String high;
     private String iexAskPrice;
     private String iexAskSize;
-    private String iexBidPrize;
+    private Double iexBidPrize;
     private String iexBidSize;
     private String iexLastUpdated;
     private String iexMarketPercent;
@@ -170,11 +170,11 @@ public class IexQuote implements Entity{
         this.iexAskSize = iexAskSize;
     }
 
-    public String getIexBidPrize() {
+    public Double getIexBidPrize() {
         return iexBidPrize;
     }
 
-    public void setIexBidPrize(String iexBidPrize) {
+    public void setIexBidPrize(Double iexBidPrize) {
         this.iexBidPrize = iexBidPrize;
     }
 

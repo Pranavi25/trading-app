@@ -24,7 +24,9 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataRetrievalFailureException;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class MarketDatadao {
     private LoggerFactory _Factory;
     private HttpClientConnectionManager httpClientConnectionManager;
@@ -68,7 +70,7 @@ public class MarketDatadao {
     protected String executeHttpGet(String url)  {
         try(CloseableHttpClient httpClient = getHttpClient()){
             HttpGet httpGet = new HttpGet(url);
-         try(CloseableHttpResponse response = (CloseableHttpResponse) httpClient.execute(httpGet)){
+         try(CloseableHttpResponse response = httpClient.execute(httpGet)){
              switch(response.getStatusLine().getStatusCode()){
                  case 200: //error 200
                      //EntityUtils.toString will close inputstream in entity
@@ -86,7 +88,7 @@ public class MarketDatadao {
     }
 
     private CloseableHttpClient getHttpClient() {
-        return HttpClients.custom().setConnectionManager(httpClientConnectionManager).setConnectionManagerShared(true).build();
+        return HttpClients.custom().setConnectionManager( httpClientConnectionManager ).setConnectionManagerShared( true ).build();
     }
 
 

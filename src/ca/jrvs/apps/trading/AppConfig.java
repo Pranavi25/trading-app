@@ -34,8 +34,9 @@ public class AppConfig {
         return (HttpClientConnectionManager) cm;
     }
 
-    @Value("https://cloud.iexapis.com/v1/")
-    private String iexhost;
+    //@Value("https://cloud.iexapis.com/v1/")
+    //private String iexhost;
+    //private String localhost;
 
     @Bean
     public MarketDataConfig marketDataConfig() {
@@ -44,26 +45,27 @@ public class AppConfig {
          * checking if the IEX pub token and iexhost which are environment and property are empty
          * @throws IllegalArgumentException if they are empty
          */
-        if (!StringUtil.isEmpty( System.getenv( "IEX_PUB_TOKEN" ) ) || StringUtil.isEmpty( iexhost )) {
-            throw new IllegalArgumentException( "Environment: IEX_PUB_TOKEN or Property: iexhost are not set properly" );
-        }
+        //if (!StringUtil.isEmpty( System.getenv( "IEX_PUB_TOKEN" ) ) ) {
+          //  throw new IllegalArgumentException( "Environment: IEX_PUB_TOKEN or Property: iexhost are not set properly" );
+        //}
         /**
          * setting the token and host objects
          */
         MarketDataConfig marketDataConfig = new MarketDataConfig();
-        marketDataConfig.setToken( System.getenv( "IEX_PUB_TOKEN" ) );
-        marketDataConfig.setHost( iexhost );
+        //marketDataConfig.setToken( System.getenv( "IEX_PUB_TOKEN" ) );
+        marketDataConfig.setToken( "pk_8dd910eba18b4dd18d024d754e4c7448" );
+        marketDataConfig.setHost( "https://cloud.iexapis.com/stable/" );
         return marketDataConfig;
 
     }
 
-    @Bean
+    /*@Bean
     public PlatformTransactionManager txManager(DataSource datasource) {
         return new DataSourceTransactionManager( datasource );
-    }
+    }*/
 
     @Bean
-    public DataSource datasSource() {
+    public DataSource dataSource() {
         String jdbcurl;
         String user_name;
         String password;

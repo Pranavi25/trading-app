@@ -59,7 +59,7 @@ public abstract class JdbccrudDao<E extends Entity, ID> implements CRUDRepositor
         if(id == null){
             throw new IllegalArgumentException("Unable to find the id");
         }
-        String selectSQL = "SELECT COUNT(*) FROM" + getTableName() + "WHERE " + idName + "=? ";
+        String selectSQL = "SELECT COUNT(*) FROM " + getTableName() + " WHERE " + idName + "=  ?  ";
         logger.info(selectSQL);
         Integer count = getJdbcTemplate().queryForObject( selectSQL,Integer.class, id );
         return count!= 0;

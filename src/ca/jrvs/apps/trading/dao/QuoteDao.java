@@ -7,18 +7,20 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
+import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class QuoteDao extends JdbccrudDao<Quote,String> {
 
     /**
      * Dependencies
      *
      */
-    private final static String TABLE_NAME = "Quote";
+    private final static String TABLE_NAME = "quote";
     private final static String ID_NAME = "ticker";
     private JdbcTemplate jdbcTemplate;
     private SimpleJdbcInsert simpleJdbcInsert;
@@ -72,15 +74,9 @@ public class QuoteDao extends JdbccrudDao<Quote,String> {
     }
 
     //@Override
-    public void update(List<Quote> quotes){
-        String updateSQL = "UPDATE quote SET  last_price =? , bid_price = ?, bid_size = ? , ask_price = ?, ask_size = ? FROM " + TABLE_NAME + "WHERE id = ? ";
-        List<Object[]> batch = new ArrayList();
-        quotes.forEach( quote -> {
-            if(!existsById( quote.getTicker() )){
-                throw new ResourceNotFoundExceptionDao( "Ticker not found" + quote.getTicker() );
-            }
-            Object[] values = new Object[]{quote.getLastPrice(),quote.getBidPrize(),quote.getBidSize(),quote.getAskPrice(),quote.getAskSize(),quote.getTicker()};
-            batch.add(values);
-        } );
+    public void update(Quote quotes){
+        String updateSQL = "UPDATE quote SET  last_price =? , bid_price = ?, bid_size = ? , ask_price = ?, ask_size = ? WHERE ticker = ? ";
+        jdbcTemplate.update(updateSQL,quotes.getLastPrice(),quotes.getBidPrize(),quotes.getBidSize(),quotes.getAskPrice(),quotes.getAskSize(),quotes.getTicker());
+
     }
 }

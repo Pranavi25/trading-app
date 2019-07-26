@@ -5,9 +5,12 @@ import ca.jrvs.apps.trading.dao.ResourceNotFoundExceptionDao;
 import ca.jrvs.apps.trading.model.domain.Account;
 import ca.jrvs.apps.trading.util.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import javax.xml.ws.ServiceMode;
 import java.util.List;
 
+@Service
 public class FundTransferService {
     private Accountdao accountdao;
 

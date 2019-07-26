@@ -6,9 +6,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.dao.IncorrectResultSizeDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
+import org.springframework.stereotype.Repository;
 
-import javax.activation.DataSource;
+import javax.sql.DataSource;
 
+
+@Repository
 public class Accountdao extends JdbccrudDao<Account, Integer> {
     private static final Logger logger = LoggerFactory.getLogger(Accountdao.class);
     private final String Table_Name = "Account";
@@ -51,6 +54,7 @@ public class Accountdao extends JdbccrudDao<Account, Integer> {
     public Account findByTraderId(Integer traderId) {
         return super.findById("trader_id", traderId, false, getEntityClass());
     }
+
 
     public Account findByTraderIdForUpdate(Integer traderId) {
         return super.findById("trader_id", traderId, true, getEntityClass());

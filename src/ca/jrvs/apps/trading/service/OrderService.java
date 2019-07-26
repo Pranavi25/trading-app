@@ -54,7 +54,7 @@ public class OrderService {
     public SecurityOrder executeMarketOrder(MarketorderDto orderDto) {
         SecurityOrder securityOrder = new SecurityOrder();
         //validate the order size and ticker
-        if(securityOrder.getSize() == null || securityOrder.getTicker() == null){
+        if(orderDto.getSize() == 0 || orderDto.getTicker() == null){
             throw new IllegalArgumentException("size and ticker cannot be empty");
         }
         Quote quote = quoteDao.findById( orderDto.getTicker());

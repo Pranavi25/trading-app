@@ -67,7 +67,7 @@ public class QuoteController {
     @ResponseStatus(HttpStatus.OK)
     public void putQuote(@RequestBody Quote quote) {
         try {
-            quoteDao.update(Collections.singletonList(quote));
+            quoteDao.update(quote);
         } catch (Exception e) {
             throw ResponseExceptionUtil.getResponseStatusException(e);
         }
