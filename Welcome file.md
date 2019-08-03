@@ -4,13 +4,13 @@
 
 - This project is an online stock trading simulation REST API which can perform certain tasks such as create, retrieve, update stock information of certain organisations.    
 -  This application can be used by front-end developers, mobile developers, and traders can utilize this REST API  
-- The application was built using certain technologies like MicroService which is implemented with SpringBoot. PSQL database. IEX market data)   
+- The application was built using certain technologies like MicroService which is implemented with SpringBoot and created PSQL database to store and perform DDL and DML commands with IEX market data.
      
 
 # Quick Start  
 
 - Prequiresites: Java, Docker, CentOS 7  - PSQL init  - git clone and mvn build  - Start Springboot app using a shell script   
-   - describe env vars  - How to consume REST API? (Swagger screenshot and postman with OpenAPI Specification, e.g. [http://35.231.122.184:5000/v2/api-docs](http://35.231.122.184:5000/v2/api-docs)    
+   - describe env vars  - How to consume REST API? (Swagger screenshot and postman with OpenAPI Specification, e.g. [http://localhost:8080/swagger-ui.html#/trader-controller/createTraderUsingPOST](http://35.231.122.184:5000/v2/api-docs)    
      
 
 # REST API Usage  
@@ -165,6 +165,6 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwOTE1MTA4LDE3NjQ5MzQ3MjMsMjEwNz
-U4Nzk2XX0=
+eyJoaXN0b3J5IjpbMTk0MzIxMTg4OSwxNzY0OTM0NzIzLDIxMD
+c1ODc5Nl19
 -->
