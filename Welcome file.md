@@ -58,11 +58,13 @@ The quote controller handles different requests related to information on the se
    - GET`/quote/iex/ticker/{ticker}`: Displays information regarding the ticker from IEX cloud.
    - POST`/quote/tickerId/{tickerId}`: In order to add a new ticker to the existing database.	 
    - PUT `/quote/iexMarketData`: Update all quotes from IEX which is an external market data source
-   - PUT``/quote/iexMarketData``: Update all  
+   - PUT`/quote/`: Update only one quote in quote table. 
 
 ## Trader Controller  
 
-- High-level description for trader controller(e.g. it can manage trader and account information. it can deposit and withdraw fund from a given account)  - briefly explain your endpoints in this controller  ##Order Controller  - High-level description for this controller.  - briefly explain your endpoints in this controller   
+- High-level description for trader controller(e.g. it can manage trader and account information. it can deposit and withdraw fund from a given account)  - briefly explain your endpoints in this controller  
+
+## Order Controller  - High-level description for this controller.  - briefly explain your endpoints in this controller   
    - /order/MarketOrder: explain what is a market order, and how does your business logic work.  
 
 ## App controller  
@@ -200,7 +202,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3Mzc0NTAwNCwtMTUyNjYwMDY3NCwtMT
-YxOTk0NzU4NywtMzEwODI5MDEzLDE5NDMyMTE4ODksMTc2NDkz
-NDcyMywyMTA3NTg3OTZdfQ==
+eyJoaXN0b3J5IjpbNTMwNTA3OTA2LC0xNTI2NjAwNjc0LC0xNj
+E5OTQ3NTg3LC0zMTA4MjkwMTMsMTk0MzIxMTg4OSwxNzY0OTM0
+NzIzLDIxMDc1ODc5Nl19
 -->
