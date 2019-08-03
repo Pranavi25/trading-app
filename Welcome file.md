@@ -62,8 +62,8 @@ The quote controller handles different requests related to information on the se
 
 ## Trader Controller  
 
-- t can manage trader and account information. it can deposit and withdraw fund from a given account)  
-- briefly explain your endpoints in this controller  
+- It can manage trader and account information by implementing certain operations like create, deposit and withdraw funds from a given account.  
+**Endpoints in this controller ** 
 
 ## Order Controller  
 - High-level description for this controller.  - briefly explain your endpoints in this controller  
@@ -204,7 +204,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NDI2NjQxNSwtMTUyNjYwMDY3NCwtMT
-YxOTk0NzU4NywtMzEwODI5MDEzLDE5NDMyMTE4ODksMTc2NDkz
-NDcyMywyMTA3NTg3OTZdfQ==
+eyJoaXN0b3J5IjpbMTg5NTk5Mjk4LC0xNTI2NjAwNjc0LC0xNj
+E5OTQ3NTg3LC0zMTA4MjkwMTMsMTk0MzIxMTg4OSwxNzY0OTM0
+NzIzLDIxMDc1ODc5Nl19
 -->
