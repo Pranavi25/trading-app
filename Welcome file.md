@@ -55,7 +55,7 @@ Swagger allows you to describe the structure of your APIs so that machines can r
 The quote controller handles different requests related to information on the securities. These securities can be traded using this application. The securities such as asking price, biding price, asking size, biding size are few information that is retrieved from IEX cloud and then stored in tabular format using PSQL database.
   
    - GET `/quote/dailyList`: list all securities that are available to trading in this trading system  
-   - GET`/quote/iex/ticker/{ticker}` 
+   - GET`/quote/iex/ticker/{ticker}`: Displays information regarding the ticker from IEX cloud. 
    - PUT `/quote/iexMarketData`: Update all quotes from IEX which is an external market data source  
 
 ## Trader Controller  
@@ -198,7 +198,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUwNzUzMzI4LC0xNTI2NjAwNjc0LC0xNj
-E5OTQ3NTg3LC0zMTA4MjkwMTMsMTk0MzIxMTg4OSwxNzY0OTM0
-NzIzLDIxMDc1ODc5Nl19
+eyJoaXN0b3J5IjpbODU2MzkzNjAsLTE1MjY2MDA2NzQsLTE2MT
+k5NDc1ODcsLTMxMDgyOTAxMywxOTQzMjExODg5LDE3NjQ5MzQ3
+MjMsMjEwNzU4Nzk2XX0=
 -->
