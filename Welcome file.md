@@ -17,10 +17,17 @@
    - PostgreSQL
  ## Intializing 
   
- PSQL init 
+
+ Clone git repository
  
 
-    git clone 
+    git clone https://github.com/Pranavi25/trading-app
+Build Maven 
+
+    mvn install -DSkipTests
+
+
+    
 
    
      
@@ -178,6 +185,6 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MjMzOTcwNSwxOTQzMjExODg5LDE3Nj
-Q5MzQ3MjMsMjEwNzU4Nzk2XX0=
+eyJoaXN0b3J5IjpbMjQ4Mzk2ODU2LDE5NDMyMTE4ODksMTc2ND
+kzNDcyMywyMTA3NTg3OTZdfQ==
 -->
