@@ -84,9 +84,10 @@ The whole and main purpose of this is to make the application up and running.
 
 # Architecture  
 
-- Draw a component diagram which contains controller, service, DAO, storage layers (you can mimic the diagram from the guide)  
+- component diagram which contains controller, service, DAO, storage layers (you can mimic the diagram from the guide)  
 
-
+![
+](https://lh3.googleusercontent.com/Tw66PMOIQym_FYvH0owX7BfFBlnZp8_y0nwE_DxYWJTrHd8xvg_Lhhh4sH9jb_Kmbp444zrOGkc "Springboot")
 
 - briefly explain the following logic layers or components (3-5 sentences for each)   
    - Controller   
@@ -214,7 +215,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MzYyMDQ4NywtMTUyNjYwMDY3NCwtMT
-YxOTk0NzU4NywtMzEwODI5MDEzLDE5NDMyMTE4ODksMTc2NDkz
-NDcyMywyMTA3NTg3OTZdfQ==
+eyJoaXN0b3J5IjpbLTExNDMwNzk0MzQsMjA1MzYyMDQ4NywtMT
+UyNjYwMDY3NCwtMTYxOTk0NzU4NywtMzEwODI5MDEzLDE5NDMy
+MTE4ODksMTc2NDkzNDcyMywyMTA3NTg3OTZdfQ==
 -->
