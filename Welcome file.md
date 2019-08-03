@@ -10,11 +10,12 @@
 # Quick Start  
 
 - Prequiresites: Java, Docker, CentOS 7  
-  - Start Springboot app using a shell script   
-   - describe env vars  - How to consume REST API? (Swagger screenshot and postman with OpenAPI Specification, e.g. [http://localhost:8080/swagger-ui.html#/trader-controller/createTraderUsingPOST](http://35.231.122.184:5000/v2/api-docs)    
+       
    - Java 8
    - Maven
    - PostgreSQL
+   -  Docker
+   - I
  ## Intializing 
   
 
@@ -25,7 +26,9 @@
 Build Maven 
 
     mvn install -DSkipTests
+Initializing the app
 
+    bash run_trading_app.sh JDBC_HOST JDBC_USER JDBC_PASSWORD IEX_PUB_TOKEN
 
     
 
@@ -185,6 +188,6 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ4Mzk2ODU2LDE5NDMyMTE4ODksMTc2ND
-kzNDcyMywyMTA3NTg3OTZdfQ==
+eyJoaXN0b3J5IjpbMjAwNzM3NDU2MSwxOTQzMjExODg5LDE3Nj
+Q5MzQ3MjMsMjEwNzU4Nzk2XX0=
 -->
