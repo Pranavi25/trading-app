@@ -90,7 +90,7 @@ The whole and main purpose of this is to make the application up and running.
 ![
 ](https://lh3.googleusercontent.com/Tw66PMOIQym_FYvH0owX7BfFBlnZp8_y0nwE_DxYWJTrHd8xvg_Lhhh4sH9jb_Kmbp444zrOGkc "Springboot")
 
-- Work flow:
+**Endpoint Controller**
    - Controller: It handles HTTP Request to the REST API. It parses the user input and then invokes the corresponding method. 
    - Service: The main business logic is implemented at this level. It validates user inputs and invokes the corresponding Dao methods.   
    - Dao: Data Access Object takes the input from service layer and then uses to store it in the database.   
@@ -108,8 +108,8 @@ The whole and main purpose of this is to make the application up and running.
 - To implement different framework like hibernate  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjE3OTIxMTcsLTcwODcwMTE1MCwyMD
-UzNjIwNDg3LC0xNTI2NjAwNjc0LC0xNjE5OTQ3NTg3LC0zMTA4
-MjkwMTMsMTk0MzIxMTg4OSwxNzY0OTM0NzIzLDIxMDc1ODc5Nl
-19
+eyJoaXN0b3J5IjpbMjA4NDk5NjM0LC03MDg3MDExNTAsMjA1Mz
+YyMDQ4NywtMTUyNjYwMDY3NCwtMTYxOTk0NzU4NywtMzEwODI5
+MDEzLDE5NDMyMTE4ODksMTc2NDkzNDcyMywyMTA3NTg3OTZdfQ
+==
 -->
