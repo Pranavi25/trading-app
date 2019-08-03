@@ -90,8 +90,8 @@ The whole and main purpose of this is to make the application up and running.
 ](https://lh3.googleusercontent.com/Tw66PMOIQym_FYvH0owX7BfFBlnZp8_y0nwE_DxYWJTrHd8xvg_Lhhh4sH9jb_Kmbp444zrOGkc "Springboot")
 
 - Work flow:
-   - Controller: It handles HTTP Request to the REST API. It par
-   - Service   
+   - Controller: It handles HTTP Request to the REST API. It parses the user input and then invokes the corresponding method. 
+   - Service: The main business logic is implemented at this level. It validates user in   
    - Dao   
    - SpringBoot: webservlet/TomCat and IoC   
    - PSQL and IEX   
@@ -215,7 +215,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4OTI2NzIxMywyMDUzNjIwNDg3LC0xNT
-I2NjAwNjc0LC0xNjE5OTQ3NTg3LC0zMTA4MjkwMTMsMTk0MzIx
-MTg4OSwxNzY0OTM0NzIzLDIxMDc1ODc5Nl19
+eyJoaXN0b3J5IjpbMjI2Mjg5ODU5LDIwNTM2MjA0ODcsLTE1Mj
+Y2MDA2NzQsLTE2MTk5NDc1ODcsLTMxMDgyOTAxMywxOTQzMjEx
+ODg5LDE3NjQ5MzQ3MjMsMjEwNzU4Nzk2XX0=
 -->
