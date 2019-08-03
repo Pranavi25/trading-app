@@ -71,7 +71,11 @@ The quote controller handles different requests related to information on the se
 -   PUT `/trader/withdraw/traderId/{traderId}/amount/{amount}`: To withdraw an amount from a given account  
 
 ## Order Controller  
--  The order controller controls the buy and sell of an order 
+-  The order controller controls the buy and sell of a security. 
+### Endpoint controller
+- POST `order/MarketOrder`: To buy a security it is possible only if there is sufficient funds in their account. To sell a security it is possib 
+
+
 - /order/MarketOrder: explain what is a market order, and how does your business logic work.  
 
 ## App controller  
@@ -209,7 +213,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTY5NDUzOTQsLTE1MjY2MDA2NzQsLT
-E2MTk5NDc1ODcsLTMxMDgyOTAxMywxOTQzMjExODg5LDE3NjQ5
-MzQ3MjMsMjEwNzU4Nzk2XX0=
+eyJoaXN0b3J5IjpbMTEwMDIyNzc2MiwtMTUyNjYwMDY3NCwtMT
+YxOTk0NzU4NywtMzEwODI5MDEzLDE5NDMyMTE4ODksMTc2NDkz
+NDcyMywyMTA3NTg3OTZdfQ==
 -->
