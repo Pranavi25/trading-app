@@ -93,8 +93,8 @@ The whole and main purpose of this is to make the application up and running.
    - Controller: It handles HTTP Request to the REST API. It parses the user input and then invokes the corresponding method. 
    - Service: The main business logic is implemented at this level. It validates user inputs and invokes the corresponding Dao methods.   
    - Dao: Data Access Object takes the input from service layer and then uses to store it in the database.   
-   - SpringBoot: webservlet/TomCat and IoC: This is a spring framework which is a container which couples different services together and binds them. It is invoked by just running it   
-   - PSQL and IEX   
+   - SpringBoot: webservlet/TomCat and IoC: This is a spring framework which is a container which couples different services together and binds them. It is invoked by just running it.   
+   - PSQL: The PostgreSQL is the database that is used in this project to store tables. The structure of the database for this particular application is database: jrvstrading, tables: quote, order, trader 
      
 
 # Improvements  
@@ -215,7 +215,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwODg1MzE0NCwyMDUzNjIwNDg3LC0xNT
-I2NjAwNjc0LC0xNjE5OTQ3NTg3LC0zMTA4MjkwMTMsMTk0MzIx
-MTg4OSwxNzY0OTM0NzIzLDIxMDc1ODc5Nl19
+eyJoaXN0b3J5IjpbNjY1NDA3NDc2LDIwNTM2MjA0ODcsLTE1Mj
+Y2MDA2NzQsLTE2MTk5NDc1ODcsLTMxMDgyOTAxMywxOTQzMjEx
+ODg5LDE3NjQ5MzQ3MjMsMjEwNzU4Nzk2XX0=
 -->
