@@ -52,7 +52,8 @@ Swagger allows you to describe the structure of your APIs so that machines can r
 
 ## Quote Controller  
 
-The quote controller handles different requests related to  
+The quote controller handles different requests related to information on the securities. These securities can be traded using this application. The securities such as asking price, biding price, asking size, 
+  
    - GET `/quote/dailyList`: list all securities that are available to trading in this trading system   
    - PUT `/quote/iexMarketData`: Update all quotes from IEX which is an external market data source  
 
@@ -196,7 +197,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNzI2Mjc2OCwtMTUyNjYwMDY3NCwtMT
+eyJoaXN0b3J5IjpbLTE5NjgzOTYwOCwtMTUyNjYwMDY3NCwtMT
 YxOTk0NzU4NywtMzEwODI5MDEzLDE5NDMyMTE4ODksMTc2NDkz
 NDcyMywyMTA3NTg3OTZdfQ==
 -->
