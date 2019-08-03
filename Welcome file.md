@@ -85,6 +85,9 @@ The whole and main purpose of this is to make the application up and running.
 # Architecture  
 
 - Draw a component diagram which contains controller, service, DAO, storage layers (you can mimic the diagram from the guide)  
+
+
+
 - briefly explain the following logic layers or components (3-5 sentences for each)   
    - Controller   
    - Service   
@@ -211,7 +214,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNzA0MjQ3OSwtMTUyNjYwMDY3NCwtMT
+eyJoaXN0b3J5IjpbMjA1MzYyMDQ4NywtMTUyNjYwMDY3NCwtMT
 YxOTk0NzU4NywtMzEwODI5MDEzLDE5NDMyMTE4ODksMTc2NDkz
 NDcyMywyMTA3NTg3OTZdfQ==
 -->
