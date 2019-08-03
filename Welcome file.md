@@ -66,12 +66,12 @@ The quote controller handles different requests related to information on the se
 ### Endpoints in this controller
 -   DELETE `/trader/traderId/{traderId}`: To delete a trader and their account provided there is no money in the account and no open positions for that trader's account
 -   POST `/trader/`: To create a new trader and an account
--   POST `/trader/firstname/{firstname}/lastname/{lastname}/dob/{dob}/country/{country}/email/{email}`: create a new trader and an associatedaccount
--   PUT `/trader/deposit/traderId/{traderId}/amount/{amount}`: deposit a positive amount in a given account
--   PUT `/trader/withdraw/traderId/{traderId}/amount/{amount}`: withdraw a positive amount from a given account (amount cannot exceed available funds in the account) 
+-   POST `/trader/firstname/{firstname}/lastname/{lastname}/dob/{dob}/country/{country}/email/{email}`: create a new trader and account with above details
+-   PUT `/trader/deposit/traderId/{traderId}/amount/{amount}`: To deposit an amount in a given account
+-   PUT `/trader/withdraw/traderId/{traderId}/amount/{amount}`: To withdraw an amount from a given account  
 
 ## Order Controller  
-- High-level description for this controller.  - briefly explain your endpoints in this controller  
+-  The order controller controls the buy and sell of an order 
 - /order/MarketOrder: explain what is a market order, and how does your business logic work.  
 
 ## App controller  
@@ -209,7 +209,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE3ODM5NTU0LC0xNTI2NjAwNjc0LC0xNj
-E5OTQ3NTg3LC0zMTA4MjkwMTMsMTk0MzIxMTg4OSwxNzY0OTM0
-NzIzLDIxMDc1ODc5Nl19
+eyJoaXN0b3J5IjpbLTE4NTY5NDUzOTQsLTE1MjY2MDA2NzQsLT
+E2MTk5NDc1ODcsLTMxMDgyOTAxMywxOTQzMjExODg5LDE3NjQ5
+MzQ3MjMsMjEwNzU4Nzk2XX0=
 -->
