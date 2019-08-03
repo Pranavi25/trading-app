@@ -30,7 +30,7 @@ Initializing the app
 
     bash run_trading_app.sh JDBC_HOST JDBC_USER JDBC_PASSWORD IEX_PUB_TOKEN
 To use this REST API Swagger is utilised.
-This application uses Sw
+This application uses Swagger UI which enables the front developers, mobile developers to perform certain operations on it. This can be accessed at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) when the application i
 
     
 
@@ -190,6 +190,6 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzM5MjU5NDgsMTk0MzIxMTg4OSwxNz
+eyJoaXN0b3J5IjpbLTE5MTEyNDQ2NjUsMTk0MzIxMTg4OSwxNz
 Y0OTM0NzIzLDIxMDc1ODc5Nl19
 -->
