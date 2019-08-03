@@ -34,6 +34,7 @@ This application uses Swagger UI which enables the front developers, mobile deve
 **Note**: The above URL works if you are running the application on the same server as you are using this URL.
 
 **Snapshot of the Application with Swagger UI**
+
 ![enter image description here](https://lh3.googleusercontent.com/IVY9WvdMU9FE_3FRGAKf7hAIEvQ51nRGXrKPQiJ7i_TMxYHAbpux7lX9yPjnA9o6GPClOh2aOLQ)
 
 
@@ -210,7 +211,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzIyMTE2NzcsLTE1MjY2MDA2NzQsLT
-E2MTk5NDc1ODcsLTMxMDgyOTAxMywxOTQzMjExODg5LDE3NjQ5
-MzQ3MjMsMjEwNzU4Nzk2XX0=
+eyJoaXN0b3J5IjpbLTkxNzA0MjQ3OSwtMTUyNjYwMDY3NCwtMT
+YxOTk0NzU4NywtMzEwODI5MDEzLDE5NDMyMTE4ODksMTc2NDkz
+NDcyMywyMTA3NTg3OTZdfQ==
 -->
