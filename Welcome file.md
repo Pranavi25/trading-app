@@ -52,7 +52,7 @@ Swagger allows you to describe the structure of your APIs so that machines can r
 
 ## Quote Controller  
 
-- High-level description for this controller. Where is market data coming from (IEX) and how did you cache the quote data (PSQL). Briefly talk about data from within your app  - briefly explain your endpoints in this controller   
+The quote controller handles different requests related to  
    - GET `/quote/dailyList`: list all securities that are available to trading in this trading system   
    - PUT `/quote/iexMarketData`: Update all quotes from IEX which is an external market data source  
 
@@ -196,7 +196,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjY2MDA2NzQsLTE2MTk5NDc1ODcsLT
-MxMDgyOTAxMywxOTQzMjExODg5LDE3NjQ5MzQ3MjMsMjEwNzU4
-Nzk2XX0=
+eyJoaXN0b3J5IjpbLTkzNzI2Mjc2OCwtMTUyNjYwMDY3NCwtMT
+YxOTk0NzU4NywtMzEwODI5MDEzLDE5NDMyMTE4ODksMTc2NDkz
+NDcyMywyMTA3NTg3OTZdfQ==
 -->
