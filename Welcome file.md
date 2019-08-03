@@ -92,7 +92,7 @@ The whole and main purpose of this is to make the application up and running.
 - Work flow:
    - Controller: It handles HTTP Request to the REST API. It parses the user input and then invokes the corresponding method. 
    - Service: The main business logic is implemented at this level. It validates user inputs and invokes the corresponding Dao methods.   
-   - Dao:    
+   - Dao: Data Access Object takes the input from service layer and then uses to store it in the database.   
    - SpringBoot: webservlet/TomCat and IoC   
    - PSQL and IEX   
      
@@ -215,7 +215,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYxNTM2OTA3LDIwNTM2MjA0ODcsLTE1Mj
-Y2MDA2NzQsLTE2MTk5NDc1ODcsLTMxMDgyOTAxMywxOTQzMjEx
-ODg5LDE3NjQ5MzQ3MjMsMjEwNzU4Nzk2XX0=
+eyJoaXN0b3J5IjpbLTE0MjM4ODQ2NDUsMjA1MzYyMDQ4NywtMT
+UyNjYwMDY3NCwtMTYxOTk0NzU4NywtMzEwODI5MDEzLDE5NDMy
+MTE4ODksMTc2NDkzNDcyMywyMTA3NTg3OTZdfQ==
 -->
