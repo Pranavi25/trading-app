@@ -73,14 +73,11 @@ The quote controller handles different requests related to information on the se
 ## Order Controller  
 -  The order controller controls the buy and sell of a security. 
 ### Endpoint controller
-- POST `order/MarketOrder`: To buy a security it is possible only if there is sufficient funds in their account. To sell a security it is possib 
-
-
-- /order/MarketOrder: explain what is a market order, and how does your business logic work.  
+- POST `order/MarketOrder`: To buy a security it is possible only if there is sufficient funds in their account. To sell a security it is possible if the account has enough position of the security. 
 
 ## App controller  
-
-- GET `/health` to make sure SpringBoot app is up and running  
+The whole and main purpose of this is to make the application up and running.
+- GET `/health` : To make sure SpringBoot app is up and running  
 
 ## Optional(Dashboard controller)   
      
@@ -213,7 +210,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMDIyNzc2MiwtMTUyNjYwMDY3NCwtMT
-YxOTk0NzU4NywtMzEwODI5MDEzLDE5NDMyMTE4ODksMTc2NDkz
-NDcyMywyMTA3NTg3OTZdfQ==
+eyJoaXN0b3J5IjpbOTczODAwNDM0LC0xNTI2NjAwNjc0LC0xNj
+E5OTQ3NTg3LC0zMTA4MjkwMTMsMTk0MzIxMTg4OSwxNzY0OTM0
+NzIzLDIxMDc1ODc5Nl19
 -->
