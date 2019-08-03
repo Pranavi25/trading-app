@@ -15,7 +15,7 @@
    - Maven
    - PostgreSQL
    -  Docker
-   - I
+   - IEX token access ([https://iexcloud.io/docs/api/](https://iexcloud.io/docs/api/))
  ## Intializing 
   
 
@@ -29,6 +29,8 @@ Build Maven
 Initializing the app
 
     bash run_trading_app.sh JDBC_HOST JDBC_USER JDBC_PASSWORD IEX_PUB_TOKEN
+To use this REST API Swagger is utilised.
+This application uses Sw
 
     
 
@@ -188,6 +190,6 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNzM3NDU2MSwxOTQzMjExODg5LDE3Nj
-Q5MzQ3MjMsMjEwNzU4Nzk2XX0=
+eyJoaXN0b3J5IjpbLTIxMzM5MjU5NDgsMTk0MzIxMTg4OSwxNz
+Y0OTM0NzIzLDIxMDc1ODc5Nl19
 -->
