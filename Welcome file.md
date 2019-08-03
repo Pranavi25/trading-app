@@ -18,7 +18,7 @@
 ## Swagger  
 
 Swagger allows you to describe the structure of your APIs so that machines can read them. The ability of APIs to describe their own structure is the root of all awesomeness in Swagger. 
--   Design-first users: use  Swagger Codegen](https://swagger.io/swagger-codegen/)  to  **generate a server stub**  for your API. The only thing left is to implement the server logic – and your API is ready to go live!
+-   Design-first users: To use  Swagger Codegen  to  generate a server stub  for your API. The only thing left is to implement the server logic – and the API is ready to go live.
 
 ## Quote Controller  
 
@@ -166,6 +166,6 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTcxODMwODAsMTk0MzIxMTg4OSwxNz
-Y0OTM0NzIzLDIxMDc1ODc5Nl19
+eyJoaXN0b3J5IjpbMTE0Nzk2NjUyNSwxOTQzMjExODg5LDE3Nj
+Q5MzQ3MjMsMjEwNzU4Nzk2XX0=
 -->
