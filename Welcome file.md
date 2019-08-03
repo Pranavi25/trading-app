@@ -63,7 +63,12 @@ The quote controller handles different requests related to information on the se
 ## Trader Controller  
 
 - It can manage trader and account information by implementing certain operations like create, deposit and withdraw funds from a given account.  
-**Endpoints in this controller ** 
+### Endpoints in this controller
+-   DELETE `/trader/traderId/{traderId}`: To delete a trader and their account provided there is no money in the account and no open positions for that trader's account
+-   POST `/trader/`: To create a new trader and an account
+-   POST `/trader/firstname/{firstname}/lastname/{lastname}/dob/{dob}/country/{country}/email/{email}`: create a new trader and an associatedaccount
+-   PUT `/trader/deposit/traderId/{traderId}/amount/{amount}`: deposit a positive amount in a given account
+-   PUT `/trader/withdraw/traderId/{traderId}/amount/{amount}`: withdraw a positive amount from a given account (amount cannot exceed available funds in the account) 
 
 ## Order Controller  
 - High-level description for this controller.  - briefly explain your endpoints in this controller  
@@ -204,7 +209,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NTk5Mjk4LC0xNTI2NjAwNjc0LC0xNj
+eyJoaXN0b3J5IjpbNjE3ODM5NTU0LC0xNTI2NjAwNjc0LC0xNj
 E5OTQ3NTg3LC0zMTA4MjkwMTMsMTk0MzIxMTg4OSwxNzY0OTM0
 NzIzLDIxMDc1ODc5Nl19
 -->
