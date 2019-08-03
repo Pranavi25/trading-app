@@ -79,12 +79,12 @@ The quote controller handles different requests related to information on the se
 The whole and main purpose of this is to make the application up and running.
 - GET `/health` : To make sure SpringBoot app is up and running  
 
-## Optional(Dashboard controller)   
-     
+
 
 # Architecture  
 
-- Draw a component diagram which contains controller, service, DAO, storage layers (you can mimic the diagram from the guide)  - briefly explain the following logic layers or components (3-5 sentences for each)   
+- Draw a component diagram which contains controller, service, DAO, storage layers (you can mimic the diagram from the guide)  
+- briefly explain the following logic layers or components (3-5 sentences for each)   
    - Controller   
    - Service   
    - Dao   
@@ -210,7 +210,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTczODAwNDM0LC0xNTI2NjAwNjc0LC0xNj
-E5OTQ3NTg3LC0zMTA4MjkwMTMsMTk0MzIxMTg4OSwxNzY0OTM0
-NzIzLDIxMDc1ODc5Nl19
+eyJoaXN0b3J5IjpbLTE5MzIyMTE2NzcsLTE1MjY2MDA2NzQsLT
+E2MTk5NDc1ODcsLTMxMDgyOTAxMywxOTQzMjExODg5LDE3NjQ5
+MzQ3MjMsMjEwNzU4Nzk2XX0=
 -->
