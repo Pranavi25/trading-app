@@ -9,11 +9,19 @@
 
 # Quick Start  
 
-- Prequiresites: Java, Docker, CentOS 7  - PSQL init  - git clone and mvn build  - Start Springboot app using a shell script   
+- Prequiresites: Java, Docker, CentOS 7  
+  - Start Springboot app using a shell script   
    - describe env vars  - How to consume REST API? (Swagger screenshot and postman with OpenAPI Specification, e.g. [http://localhost:8080/swagger-ui.html#/trader-controller/createTraderUsingPOST](http://35.231.122.184:5000/v2/api-docs)    
    - Java 8
    - Maven
    - PostgreSQL
+ ## Intializing 
+  
+ PSQL init 
+ 
+
+    git clone 
+
    
      
 
@@ -170,6 +178,6 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI3NjM5MzI1LDE5NDMyMTE4ODksMTc2ND
-kzNDcyMywyMTA3NTg3OTZdfQ==
+eyJoaXN0b3J5IjpbMTE5MjMzOTcwNSwxOTQzMjExODg5LDE3Nj
+Q5MzQ3MjMsMjEwNzU4Nzk2XX0=
 -->
