@@ -32,7 +32,8 @@ Initializing the app
 To use this REST API Swagger is utilised.
 This application uses Swagger UI which enables the front developers, mobile developers to perform certain operations on it. This can be accessed at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) when the application is in run mode.
 **Note**: The above URL works if you are running the application on the same server as you are using this URL.
-SnapShot of the Application with Swagg
+
+**Snapshot of the Application with Swagger UI**
 ![enter image description here](https://lh3.googleusercontent.com/IVY9WvdMU9FE_3FRGAKf7hAIEvQ51nRGXrKPQiJ7i_TMxYHAbpux7lX9yPjnA9o6GPClOh2aOLQ)
 
 
@@ -195,7 +196,7 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODE3NTg3NywtMTYxOTk0NzU4NywtMz
-EwODI5MDEzLDE5NDMyMTE4ODksMTc2NDkzNDcyMywyMTA3NTg3
-OTZdfQ==
+eyJoaXN0b3J5IjpbLTE1MjY2MDA2NzQsLTE2MTk5NDc1ODcsLT
+MxMDgyOTAxMywxOTQzMjExODg5LDE3NjQ5MzQ3MjMsMjEwNzU4
+Nzk2XX0=
 -->
