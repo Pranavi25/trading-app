@@ -1,16 +1,4 @@
-Version:1.0 StartHTML:000000187 EndHTML:000044511 StartFragment:000004320 EndFragment:000044479 StartSelection:000004320 EndSelection:000044479 SourceURL:https://stackedit.io/app StackEdit
 
-Trash
-
-Temp
-
-Trading App
-
-Welcome file
-
-Trading App
-
-Trading App
 
 # Introduction  
 
@@ -175,5 +163,5 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNzU4Nzk2XX0=
+eyJoaXN0b3J5IjpbMTE2MzY2ODQwMiwyMTA3NTg3OTZdfQ==
 -->
