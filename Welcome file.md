@@ -17,7 +17,7 @@
 
 ## Swagger  
 
-What's swagger (1-2 sentences, you can copy from swagger docs). Why are we using it or who will benefit from it?  
+Swagger allows you to describe the structure of your APIs so that machines can read them. The ability of APIs to describe their own structure is the root of all awesomeness in Swagger
 
 ## Quote Controller  
 
@@ -165,6 +165,6 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MzIxMTg4OSwxNzY0OTM0NzIzLDIxMD
-c1ODc5Nl19
+eyJoaXN0b3J5IjpbMjEyMjUzMjcxOSwxOTQzMjExODg5LDE3Nj
+Q5MzQ3MjMsMjEwNzU4Nzk2XX0=
 -->
