@@ -103,10 +103,11 @@ The whole and main purpose of this is to make the application up and running.
 - To provide traders multiple accounts access
 - Make data updates quick and efficient.
 - Provide additional features apart from create, deposit and withdraw funds from an account.
--  
+- Provide in detail response to enhance user's experience
+- To implement different framework like hibernate  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY3NTM0NzI3LDIwNTM2MjA0ODcsLTE1Mj
-Y2MDA2NzQsLTE2MTk5NDc1ODcsLTMxMDgyOTAxMywxOTQzMjEx
-ODg5LDE3NjQ5MzQ3MjMsMjEwNzU4Nzk2XX0=
+eyJoaXN0b3J5IjpbLTcwODcwMTE1MCwyMDUzNjIwNDg3LC0xNT
+I2NjAwNjc0LC0xNjE5OTQ3NTg3LC0zMTA4MjkwMTMsMTk0MzIx
+MTg4OSwxNzY0OTM0NzIzLDIxMDc1ODc5Nl19
 -->
