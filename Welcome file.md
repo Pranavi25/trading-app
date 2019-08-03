@@ -9,12 +9,13 @@
 
 # Quick Start  
 
-- Prequiresites: Java, Docker, CentOS 7  
+- Prequiresites:   
        
    - Java 8
    - Maven
    - PostgreSQL
    -  Docker
+   - CentOS 7
    - IEX token access ([https://iexcloud.io/docs/api/](https://iexcloud.io/docs/api/))
  ## Intializing 
   
@@ -107,7 +108,8 @@ The whole and main purpose of this is to make the application up and running.
 - To implement different framework like hibernate  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwODcwMTE1MCwyMDUzNjIwNDg3LC0xNT
-I2NjAwNjc0LC0xNjE5OTQ3NTg3LC0zMTA4MjkwMTMsMTk0MzIx
-MTg4OSwxNzY0OTM0NzIzLDIxMDc1ODc5Nl19
+eyJoaXN0b3J5IjpbLTEzNjE3OTIxMTcsLTcwODcwMTE1MCwyMD
+UzNjIwNDg3LC0xNTI2NjAwNjc0LC0xNjE5OTQ3NTg3LC0zMTA4
+MjkwMTMsMTk0MzIxMTg4OSwxNzY0OTM0NzIzLDIxMDc1ODc5Nl
+19
 -->
