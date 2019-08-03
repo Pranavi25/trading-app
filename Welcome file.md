@@ -3,7 +3,8 @@
 # Introduction  
 
 - This project is an online stock trading simulation REST API which can perform certain tasks such as create, retrieve, update stock information of certain organisations.    
--  it an online stock trading simulation REST API which can blah..blah) and who can use this API (e.g. front-end developer, mobile developer, and traders can utilize this REST API)  - Briefly talk about technologies used in this project(e.g. It's a MicroService which is implemented with SpringBoot. PSQL database. IEX market data)   
+-  This application can be used by front-end developers, mobile developers, and traders can utilize this REST API  
+- The application was built using certain technologies like MicroService which is implemented with SpringBoot. PSQL database. IEX market data)   
      
 
 # Quick Start  
@@ -164,6 +165,6 @@ Add a **Google Drive** workspace
 
 # Improvements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NzY2NjUxLDE3NjQ5MzQ3MjMsMjEwNz
+eyJoaXN0b3J5IjpbODcwOTE1MTA4LDE3NjQ5MzQ3MjMsMjEwNz
 U4Nzk2XX0=
 -->
