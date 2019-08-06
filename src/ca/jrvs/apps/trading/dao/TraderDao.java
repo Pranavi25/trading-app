@@ -38,13 +38,13 @@ public class TraderDao implements CRUDRepository<Trader, Integer> {
     @Override
     public Trader findById(Integer id) {
         Trader trader = null;
-        trader = jdbcTemplate.queryForObject("SELECT * FROM" + Table_Name + "WHERE id = ?", BeanPropertyRowMapper.newInstance( Trader.class ),id );
+        trader = jdbcTemplate.queryForObject("SELECT * FROM " + Table_Name + " WHERE id = ?", BeanPropertyRowMapper.newInstance( Trader.class ),id );
         return trader;
     }
 
     @Override
     public boolean existsById(Integer id) {
-        String selectSQL = "SELECT COUNT(*) FROM" + Table_Name + "WHERE " + id + "=? ";
+        String selectSQL = "SELECT COUNT(*) FROM " + Table_Name + " WHERE " + id + " = ? ";
         logger.info(selectSQL);
         Integer count = jdbcTemplate.queryForObject( selectSQL,Integer.class, id );
         return count!= 0;
@@ -52,7 +52,7 @@ public class TraderDao implements CRUDRepository<Trader, Integer> {
 
     @Override
     public void deleteById(Integer id) {
-        String deleteSQL = "DELETE FROM " + Table_Name + "WHERE " + id + "=?";
+        String deleteSQL = "DELETE FROM " + Table_Name + " WHERE " + id + " =? ";
         logger.info(deleteSQL);
         jdbcTemplate.update(deleteSQL,id);
 

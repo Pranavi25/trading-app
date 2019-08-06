@@ -31,7 +31,7 @@ public class QuoteService {
         quote.setTicker( iexQuote.getSymbol() );
         quote.setLastPrice( Double.parseDouble( Optional.ofNullable( iexQuote.getLatestPrice() ).orElse( "0" ) ) );
         quote.setAskPrice( Double.parseDouble( Optional.ofNullable( iexQuote.getIexAskPrice() ).orElse( "0" ) ) );
-        quote.setBidPrize( Optional.ofNullable( iexQuote.getIexBidPrize() ).orElse( Double.valueOf( "0" ) ) );
+        quote.setBidPrize( Double.parseDouble( Optional.ofNullable( iexQuote.getIexBidPrize() ) .orElse( "0") )  );
         quote.setBidSize( Integer.parseInt( Optional.ofNullable( iexQuote.getIexBidSize() ).orElse( "0" ) ) );
         quote.setAskSize( Integer.parseInt( Optional.of( iexQuote.getIexAskSize() ).orElse( "0" ) ) );
         return quote;
