@@ -86,11 +86,11 @@ The whole and main purpose of this is to make the application up and running.
 # Architecture  
 
 - component diagram which contains controller, service, DAO, storage layers 
+![enter image description here](https://lh3.googleusercontent.com/QzqxuRLM9UFt-5JuE4y0sgij66XAgtTpPgiUBS00PsKkqg0mSQcrDxMplPMSM2LceULCRAbmJ9o "Trading App Architecture")
 
-![
-](https://lh3.googleusercontent.com/Tw66PMOIQym_FYvH0owX7BfFBlnZp8_y0nwE_DxYWJTrHd8xvg_Lhhh4sH9jb_Kmbp444zrOGkc "Springboot")
 
-Endpoint Controlle**
+
+**Endpoint Controller**
    - Controller: It handles HTTP Request to the REST API. It parses the user input and then invokes the corresponding method. 
    - Service: The main business logic is implemented at this level. It validates user inputs and invokes the corresponding Dao methods.   
    - Dao: Data Access Object takes the input from service layer and then uses to store it in the database.   
@@ -108,6 +108,6 @@ Endpoint Controlle**
 - To implement different framework like hibernate  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYzMDAzNDMwLC01MjA3NjUzMDQsLTcwOD
-cwMTE1MF19
+eyJoaXN0b3J5IjpbMjE0NjIwNjU0LDY2MzAwMzQzMCwtNTIwNz
+Y1MzA0LC03MDg3MDExNTBdfQ==
 -->
